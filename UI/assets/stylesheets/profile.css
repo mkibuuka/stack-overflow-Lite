@@ -190,13 +190,6 @@
             border: 1px;
         }
 
-        .leftcolumn .block-sections .left-avator-image {
-            width: 100%;
-            max-width: 200;
-            border-radius: 0;
-            border: 1px;
-        }
-
         /* customising h5 for right column */
 
         .leftcolumn .block-sections h5 {
