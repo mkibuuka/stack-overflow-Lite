@@ -1,0 +1,180 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /*-------------------------------------------------------*/
+
+        /* Header/Blog Title */
+
+        .heading {
+            overflow: hidden;
+            /* background-color: #f1f1f1; */
+            padding: 10px 10px;
+            border-bottom: 1px solid dodgerblue;
+        }
+
+        .heading .logo {
+            padding-top: 15px;
+        }
+
+        .heading a {
+            float: right;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .heading a:hover {
+            background-color:dodgerblue;
+            color: white;
+        }
+
+        .heading a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .heading .logo {
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+        }
+
+
+        .header-align {
+            float: left;
+        }
+
+        @media screen and (max-width: 500px) {
+            .heading a {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+            .heading .logo {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+            .header-align {
+                float: none;
+            }
+        }
+        /*-----------------------------------------------*/
+
+        body {
+            font-family: Arial;
+            padding: 20px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /*----------------------------------------------------*/
+
+        /* main column */
+
+        .main-column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+        }
+
+        /* Add a duplicates effect for articles */
+
+        .duplicates {
+            padding: 20px;
+            border-bottom: 1px solid dodgerblue;
+        }
+
+        /* round image borders for right column */
+
+        .main-column .duplicates img {
+            width: 20px;
+            border-radius: 15px;
+            border: 1px;
+        }
+
+        .main-column .duplicates .text-field-class {
+            width: 300px;
+            height: 200px;
+            margin-bottom: 5px;
+        }
+
+        .main-column .duplicates .label-class {
+            width: 300px;
+            height: 50px;
+        }
+
+        .main-column .duplicates .btn {
+            width: 300px;
+            height: 50px;
+            margin-top: 5px;
+            font-size: 17px;
+            /* border-radius: 15px; */
+            border: 1px;
+            border-radius: 20px;
+            color: white;
+            background: dodgerblue;
+            margin-bottom: 5px;
+        }
+
+        form,
+        footer {
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Aerial, sans-serif;
+        }
+
+        @media screen and (min-width: 500px) {
+            .main-column .duplicates .text-field-class {
+                width: 400px;
+                padding: 0;
+            }
+
+            .main-column .duplicates .btn {
+                width: 400px;
+            }
+
+            .main-column .duplicates .label-class {
+                width: 400px;
+                height: 50px;
+            }
+        }
+        /*-----------------------------------------------------*/
+
+        /* Clear floats after the columns */
+
+        .main-column:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        footer, small {
+            font-weight: 400;
+            color: black;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+        @media screen and (max-width: 800px) {
+            .main-column {
+                width: 100%;
+                padding: 0;
+            }
+        }

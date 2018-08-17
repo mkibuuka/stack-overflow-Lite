@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------------------*/
+
+/* Header/Blog Title */
+
+.heading {
+    overflow: hidden;
+    /* background-color: #f1f1f1; */
+    padding: 10px 10px;
+    border-bottom: 1px solid dodgerblue;
+}
+
+.heading .logo {
+    padding-top: 15px;
+}
+
+.heading a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.heading .logo {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+}
+
+.heading a:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.heading a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-align {
+    float: left;
+}
+
+.heading .search-bar {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .heading a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .heading .logo {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-align {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .heading .search-bar {
+        float: none;
+    }
+
+    .heading a {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+}
+
+/*-----------------------------------------------*/
+
+body {
+
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Aerial, sans-serif;
+    width: 800px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+}
+
+/*----------------------------------------------------*/
+
+.default-image {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add block-sections effect for articles */
+
+.block-sections {
+    padding: 20px;
+    border-bottom: 1px solid dodgerblue;
+
+}
+
+/* round image borders for right column */
+
+.block-sections img {
+    width: 20px;
+    border-radius: 15px;
+    border: 1px;
+}
+
+.block-sections .left-avator-image {
+    width: 100%;
+    max-width: 200;
+    border-radius: 0;
+    border: 1px;
+}
+
+/* customising h5 for right column */
+
+.block-sections h5 {
+    display: inline-flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+span button {
+    background: dodgerblue;
+    border-radius: 5px;
+    border: 1px;
+    color: white;
+}
+
+.view-span button {
+    display: inline;
+    background: green;
+    border: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------*/
+
+/* Clear floats after the columns */
+
+.FlexWrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+footer,
+small {
+    font-weight: 400;
+    color: black;
+}
+
+footer,
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Aerial, sans-serif;
+}
