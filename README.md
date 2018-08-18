@@ -15,4 +15,4 @@ Stack-overflow-lite is a blog web application that facilitates people interactio
 * A user can access all answers posted for a particular question
 
 
-[Please click me to preview the page templates!!](http://github.com) 
+[Please click me to preview the page templates!!](https://mkibuuka.github.io/stack-overflow-Lite/index.html) 
