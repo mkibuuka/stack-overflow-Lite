@@ -36,8 +36,7 @@
         }
 
         .heading .search-bar {
-            padding-top: 2px;
-            padding-bottom: 2px;
+
             padding-right: 40px;
             font-size: 15px;
             text-align: right;
@@ -58,13 +57,15 @@
         }
 
         .heading input[type=text] {
-            padding: 12px;
+            padding: 11px;
             border: none;
             margin-top: 2px;
             margin-right: 25px;
             font-size: 18px;
             border-radius: 4px;
             margin: 0;
+            border: solid 1px;
+            border-color: dodgerblue;
         }
 
         .heading .search-bar {
@@ -73,11 +74,12 @@
 
         .heading .search-bar button {
             float: right;
-            padding: 11px;
+            padding: 10px;
             margin-top: 2px;
             margin-right: 25px;
-            font-size: 18px;
-            border: none;
+            font-size: 15px;
+            border: solid 1px;
+            border-color: dodgerblue;
             border-radius: 4px;
             cursor: pointer;
             border-spacing: 0px;
