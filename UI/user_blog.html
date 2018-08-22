@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/user_blog.css" />
 </head>
 
 <body>
@@ -11,8 +11,7 @@
         <div class="heading" id="my-heading">
             <span class="logo">StackOverflow Lite</span>
             <div "header-align">
-                <a href="login.html">Login</a>
-                <a href="sign_up.html">SignUp</a>
+                <a href="profile.html">Profile</a>
                 <div class="search-bar">
                     <form action="submit_page">
                         <input type="text" placeholder="Search.." name="search">
@@ -24,7 +23,7 @@
     </header>
 
     <div class="FlexWrapper">
-        <div class="leftcolumn">
+        <div class="main-column">
             <div class="block-sections">
                 <img src="images/avatar.png" alt="default-avator">
                 <h5>EA deleted my Original account.</h5>
@@ -98,7 +97,7 @@
                 </span>
             </div>
 
-        <div class="block-sections">
+            <div class="block-sections">
                 <img src="images/avatar.png" alt="default-avator">
                 <h5>The intrinsic problem of responsive images.</h5>
                 <h5>posted by @myco on Aug 13, 2018</h5>
@@ -118,62 +117,50 @@
                 <span>
                     <button>HTML/CSS</button>
                 </span>
-        </div>
-
-            <div class="block-sections">
-                    <img src="images/avatar.png" alt="default-avator">
-                    <h5>The intrinsic problem of responsive images.</h5>
-                    <h5>posted by @myco on Aug 13, 2018</h5>
-                    <span class="view-span">
-                        <a href="post_answer.html">
-                            <button>View Question</button>
-                        </a>
-                    </span>
-                    <p>
-                        As an author, you cannot know or plan for every possible device that may visit your site now or in the future. Only a browser
-                        knows the particulars of the device using it (screen size and device capabilities for example) at the
-                        moment it serves up and renders the content.
-                    </p>
-                    <span>
-                        <button>Programming</button>
-                    </span>
-                    <span>
-                        <button>HTML/CSS</button>
-                    </span>
             </div>
 
-                <div class="block-sections">
-                        <img src="images/avatar.png" alt="default-avator">
-                        <h5>The intrinsic problem of responsive images.</h5>
-                        <h5>posted by @myco on Aug 13, 2018</h5>
-                        <span class="view-span">
-                            <a href="post_answer.html">
-                                <button>View Question</button>
-                            </a>
-                        </span>
-                        <p>
-                            As an author, you cannot know or plan for every possible device that may visit your site now or in the future. Only a browser
-                            knows the particulars of the device using it (screen size and device capabilities for example) at the
-                            moment it serves up and renders the content.
-                        </p>
-                        <span>
-                            <button>Programming</button>
-                        </span>
-                        <span>
-                            <button>HTML/CSS</button>
-                        </span>
-                </div>
-        </div>
-
-        <div class="rightcolumn">
             <div class="block-sections">
-                <!-- <h3>Follow Me</h3> -->
-                <a href="#" class="create-post">TRENDING</a>
-                <a href="#" class="create-post">TAGS</a>
-                <a href="#" class="create-post">USERS</a>
-                <a href="#" class="create-post">FOLLOW</a>
-                <a href="#" class="create-post">DISCOVER</a>
-                <a href="#" class="create-post">JOBS</a>
+                <img src="images/avatar.png" alt="default-avator">
+                <h5>The intrinsic problem of responsive images.</h5>
+                <h5>posted by @myco on Aug 13, 2018</h5>
+                <span class="view-span">
+                    <a href="post_answer.html">
+                        <button>View Question</button>
+                    </a>
+                </span>
+                <p>
+                    As an author, you cannot know or plan for every possible device that may visit your site now or in the future. Only a browser
+                    knows the particulars of the device using it (screen size and device capabilities for example) at the
+                    moment it serves up and renders the content.
+                </p>
+                <span>
+                    <button>Programming</button>
+                </span>
+                <span>
+                    <button>HTML/CSS</button>
+                </span>
+            </div>
+
+            <div class="block-sections">
+                <img src="images/avatar.png" alt="default-avator">
+                <h5>The intrinsic problem of responsive images.</h5>
+                <h5>posted by @myco on Aug 13, 2018</h5>
+                <span class="view-span">
+                    <a href="post_answer.html">
+                        <button>View Question</button>
+                    </a>
+                </span>
+                <p>
+                    As an author, you cannot know or plan for every possible device that may visit your site now or in the future. Only a browser
+                    knows the particulars of the device using it (screen size and device capabilities for example) at the
+                    moment it serves up and renders the content.
+                </p>
+                <span>
+                    <button>Programming</button>
+                </span>
+                <span>
+                    <button>HTML/CSS</button>
+                </span>
             </div>
         </div>
     </div>
@@ -184,26 +171,26 @@
     </div>
 
     <script>
-            // When the user scrolls the page, execute myFunction
-            window.onscroll = function () {
-                myFunction()
-            };
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
 
-            // Get the header
-            var header = document.getElementById("my-heading");
+        // Get the header
+        var header = document.getElementById("my-heading");
 
-            // Get the offset position of the navbar
-            var sticky = header.offsetTop;
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
 
-            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
-                }
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
             }
-        </script>
+        }
+    </script>
 </body>
 
 </html>

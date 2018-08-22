@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <div class="heading">
+        <div class="heading" id="my-heading">
             <span class="logo">StackOverflow Lite</span>
             <div "header-align">
                 <a href="index.html">Logout</a>
@@ -28,7 +28,7 @@
             <div class="block-sections">
                 <img src="images/avatar.png" alt="default-avator">
                 <h5>Learning HTML5 and CSS3. posted by myco on Aug 12, 2018</h5>
-                <div class="default-image"></div>
+                <div class="default-image"><img src=""></div>
                 <p>Let's suppose you have three versions of an image.
                 They all look the same except one is a smaller size or resolution intended for smaller viewports, another caters for medium size viewports, and nally a larger version covers off every other viewport.
                 Here is how we can let the browser know we have these three versions available.
@@ -87,6 +87,72 @@
                     <button>Religion</button>
                 </span>
             </div>
+
+            <div class="block-sections">
+                    <img src="images/avatar.png" alt="default-avator">
+                    <h5>Learning HTML5 and CSS3. posted by myco on Aug 12, 2018</h5>
+                    <div class="default-image"></div>
+                    <p>Let's suppose you have three versions of an image. They all look the same except one is a smaller size or resolution intended
+                        for smaller viewports, another caters for medium size viewports, and nally a larger version covers off
+                        every other viewport. Here is how we can let the browser know we have these three versions available.
+                    </p>
+                    <span>
+                        <button>Life</button>
+                    </span>
+                    <span>
+                        <button>Technology</button>
+                    </span>
+                    <span>
+                        <button>Wildlife</button>
+                    </span>
+                    <span>
+                        <button>Religion</button>
+                    </span>
+            </div>
+
+            <div class="block-sections">
+                        <img src="images/avatar.png" alt="default-avator">
+                        <h5>Learning HTML5 and CSS3. posted by myco on Aug 12, 2018</h5>
+                        <div class="default-image"></div>
+                        <p>Let's suppose you have three versions of an image. They all look the same except one is a smaller size or resolution intended
+                            for smaller viewports, another caters for medium size viewports, and nally a larger version covers off
+                            every other viewport. Here is how we can let the browser know we have these three versions available.
+                        </p>
+                        <span>
+                            <button>Life</button>
+                        </span>
+                        <span>
+                            <button>Technology</button>
+                        </span>
+                        <span>
+                            <button>Wildlife</button>
+                        </span>
+                        <span>
+                            <button>Religion</button>
+                        </span>
+            </div>
+
+            <div class="block-sections">
+                        <img src="images/avatar.png" alt="default-avator">
+                        <h5>Learning HTML5 and CSS3. posted by myco on Aug 12, 2018</h5>
+                        <div class="default-image"></div>
+                        <p>Let's suppose you have three versions of an image. They all look the same except one is a smaller size or resolution intended
+                            for smaller viewports, another caters for medium size viewports, and nally a larger version covers off
+                            every other viewport. Here is how we can let the browser know we have these three versions available.
+                        </p>
+                        <span>
+                            <button>Life</button>
+                        </span>
+                        <span>
+                            <button>Technology</button>
+                        </span>
+                        <span>
+                            <button>Wildlife</button>
+                        </span>
+                        <span>
+                            <button>Religion</button>
+                        </span>
+            </div>
         </div>
 
         <div class="rightcolumn">
@@ -123,9 +189,32 @@
                 <a href="#post" class="create-post">TRENDING</a>
                 <a href="#post" class="create-post">TAGS</a>
                 <a href="#post" class="create-post">FAVOURITES</a>
+                <a class="static-one" href="user_blog.html" class="create-post">BLOG</a>
             </div>
         </div>
     </div>
+
+    <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function () {
+                myFunction()
+            };
+
+            // Get the header
+            var header = document.getElementById("my-heading");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
 
     <div class="footer">
         <small>&copy; Stackoverflow-lite

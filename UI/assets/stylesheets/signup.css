@@ -9,6 +9,8 @@
 
         .heading {
             overflow: hidden;
+            background-color: dodgerblue;
+            color: white;
             padding: 10px 10px;
             border-bottom: 1px solid dodgerblue;
         }
@@ -68,6 +70,7 @@
         body {
             font-family: Arial;
             padding: 20px;
+            /* background: #555; */
             width: 100%;
             max-width: 1400px;
             margin: 0 auto;
@@ -88,7 +91,10 @@
         /* Add a duplicates effect for articles */
 
         .duplicates {
+            /* background-color: whitesmoke; */
             padding: 20px;
+            /* margin-top: 20px; remove the top space between page elements */
+            /* margin-bottom: 5px; */
             border-bottom: 1px solid dodgerblue;
         }
 
@@ -123,9 +129,10 @@
             padding-top: 12px;
             padding-bottom: 12px;
             margin-bottom: 10px;
+            font-size: 12px;
         }
 
-        .main-column .duplicates .btn {
+        .duplicates .btn {
             width: 100%;
             padding: 20px;
             margin: auto;
@@ -178,8 +185,7 @@
         small b {
             color:dodgerblue;
         }
-        /* Responsive layout - when the screen is less than 800px wide,
-        make the two columns stack on top of each other instead of next to each other */
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
         @media screen and (max-width: 800px) {
             .main-column {

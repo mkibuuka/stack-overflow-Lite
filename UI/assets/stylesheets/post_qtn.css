@@ -9,7 +9,8 @@
 
 .heading {
     overflow: hidden;
-    /* background-color: #f1f1f1; */
+    background-color: dodgerblue;
+    color: white;
     padding: 10px 10px;
     border-bottom: 1px solid dodgerblue;
 }
@@ -127,7 +128,7 @@ body {
     height: 50px;
     margin-top: 5px;
     font-size: 17px;
-    border-radius: 20px;
+    /* border-radius: 15px; */
     border: 1px;
     color: white;
     background: dodgerblue;
