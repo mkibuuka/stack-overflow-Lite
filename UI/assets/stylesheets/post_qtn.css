@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -31,7 +30,7 @@
 }
 
 .heading a:hover {
-    background-color:dodgerblue;
+    background-color: dodgerblue;
     color: white;
 }
 
@@ -46,17 +45,9 @@
     float: left;
 }
 
-
 .header-align {
     float: left;
 }
-
-/* .heading input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-} */
 
 @media screen and (max-width: 500px) {
     .heading a {
@@ -73,6 +64,7 @@
         float: none;
     }
 }
+
 /*-----------------------------------------------*/
 
 body {
@@ -93,13 +85,11 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-
 }
 
 /* Add a duplicates effect for articles */
 
 .duplicates {
-
     padding: 20px;
     border-bottom: 1px solid dodgerblue;
 }
@@ -121,18 +111,21 @@ body {
 .main-column .duplicates .label-class {
     width: 300px;
     height: 50px;
+    margin-bottom: 10px;
 }
 
 .main-column .duplicates .btn {
-    width: 300px;
-    height: 50px;
-    margin-top: 5px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    margin-bottom: 5px;
     font-size: 17px;
-    /* border-radius: 15px; */
+    text-align: center;
     border: 1px;
+    border-radius: 20px;
     color: white;
     background: dodgerblue;
-    margin-bottom: 5px;
 }
 
 form,
@@ -145,16 +138,15 @@ footer {
         width: 400px;
         padding: 0;
     }
-
     .main-column .duplicates .btn {
         width: 400px;
     }
-
     .main-column .duplicates .label-class {
         width: 400px;
         height: 50px;
     }
 }
+
 /*-----------------------------------------------------*/
 
 /* Clear floats after the columns */
@@ -173,8 +165,8 @@ footer {
     margin-top: 20px;
 }
 
-
-footer, small {
+footer,
+small {
     font-weight: 400;
     color: black;
 }
